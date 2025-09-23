@@ -9,7 +9,7 @@ spec:
     - name: next-gitops-app
       image: gigax01/next-gitops-app:fe2fd0d99f7cb3f249bcbef7b29ca1e27718f434
       imagePullPolicy: Always
-        ports:
+      ports: 
         - containerPort: 3000
 ---
 apiVersion: v1
