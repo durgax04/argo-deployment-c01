@@ -7,7 +7,7 @@ metadata:
 spec: 
   containers:
     - name: next-gitops-app
-      image: gigax01/next-gitops-app:d77ff993b2607f5da3dcce620b929b129341e96f
+      image: gigax01/next-gitops-app:fe2fd0d99f7cb3f249bcbef7b29ca1e27718f434
       imagePullPolicy: Always
         ports:
         - containerPort: 3000
