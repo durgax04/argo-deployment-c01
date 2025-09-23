@@ -1,6 +1,20 @@
 apiVersion: v1
 kind: Pod
 metadata:
+  name: my-app
+  labels: 
+    app: my-app
+spec: 
+  containers:
+    - name: next-gitops-app
+      image: gigax01/next-gitops-app:5f9f587fe62030a63959bc05b75bc582465424b9
+      imagePullPolicy: Always
+        ports:
+        - containerPort: 3000
+---
+apiVersion: v1
+kind: Pod
+metadata:
   name: nginx
   labels: 
     app: nginx
@@ -21,18 +35,5 @@ spec:
   containers:
     - name: httpd
       image: httpd
-      ports: 
-      - containerPort: 80
----
-apiVersion: v1
-kind: Pod
-metadata:
-  name: my-app
-  labels: 
-    app: my-app
-spec: 
-  containers:
-    - name: next-gitops-app
-      image: gigax01/next-gitops-app:5f9f587fe62030a63959bc05b75bc582465424b9
       ports: 
       - containerPort: 80
