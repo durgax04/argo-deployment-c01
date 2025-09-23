@@ -32,7 +32,7 @@ metadata:
     app: my-app
 spec: 
   containers:
-    - name: gigax01/next-gitops-app
+    - name: next-gitops-app
       image: gigax01/next-gitops-app:5f9f587fe62030a63959bc05b75bc582465424b9
       ports: 
       - containerPort: 80
